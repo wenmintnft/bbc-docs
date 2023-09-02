@@ -1,0 +1,48 @@
+---
+title: "Engineering"
+description: "Our automated deployment infrastructure makes launching tokens and DeFi projects super easy."
+---
+
+BBC is a new brand launched by WenMint meant to revolutionize the way token launches are conducted. WenMint has been in business for over two years and has launched hundreds of NFT projects and helped raise millions of dollars for founders. Over the last two years, WenMint has developed Solidity factories and parameterized contract patterns for the NFT space that dramatically simplify the process of launching NFT projects. Now, via the BBC, we are doing the same for token launches and initial dex offerings (IDOs).
+
+## Token Contracts
+
+Deploying "simple" ERC-20 tokens is a no-brainer, but there are a number of new token patterns that can help projects achieve long-term sustainability and foster a greater level of engagement within your community. Two of the most notable token patterns are "tax tokens" and "governance tokens".
+
+### Tax Tokens
+
+Tax tokens are ERC-20 tokens that charge a fee everytime a transaction happens on a decentralize exchange such as Uniswap. The "tax" is a percentage of the tokens being swapped. It is generally broken into a "buy" or "sell", each of which can be a different percentage (e.g, a 1% buy tax and a 3% sell tax). A simple approach is to periodically convert the collected tokens to ETH and sweep them out into a "tax wallet" that can be used to fund buy backs, marketing expenses, or other operational costs.
+
+### Liquidity Tokens
+
+A second form of tax token is the "liquidity token". In this pattern, the tax mechanism works as described above, but the collected fees are periodically deposited automatically back into the liquidity pool (LP). This helps grow the LP over time, which reduces price volatility.
+
+### Deflationary Tokens
+
+A third form of tax token is the "deflationary token", which automatically reduces supply by burning the tokens collected via the buy and sell tax. Theoretically, this puts upward pressure on price.
+
+It is possible to combine each of these tax token patterns in a single token contract. For example, you could burn all buy taxes and deposit all sell taxes into the LP. Or you could automatically swap all buy taxes to ETH and send to a tax wallet while depositing all sell taxes back into the LP.
+
+The BBC has deployment factories for deploying tax tokens of all forms and can help you decide which makes sense for your project.
+
+### Governance Tokens
+
+On-chain governances and DAOs are a hot topic these days and will only get more popular with time. There are new patterns that can be implemented within ERC-20 contracts, such as the ERCVotes interface, that are designed to work with some of the newest DAO platforms. The BBC can help you launch a DAO on Snapshot, Tally, or other popular DAO platforms and help you configure the DAO software for optimal community management. If you decide to go with full on-chain governance, you'll be able to deploy an ERC-20 token with the proper features.
+
+## Pre-Sale Contracts
+
+Most token pre-sales that were held during the recent memecoin craze were total nightmares, with people posting EOA wallet addresses on Twitter and pre-sale buyers blindly sending ETH with no way of knowing how many tokens they'd get or how much money would be raised in the pre-sale. Collecting pre-sale money via a EOA (or "regular") wallet creates huge accounting issues for project founders. Some people send too much money, some don't send enough, and project founders are left to sort out all the transactions and then manually create airdrop lists. Most of these pre-sales also don't apply vesting, resulting in dumping before the project can gain traction.
+
+We're on a mission to introduce better mechanisms for handling pre-sale funds.
+
+## Airdrop Contracts
+
+Community collabs are a critical part of launching any Web 3 project, and airdrops are a good way to foster such collabs. We have audited contracts and automated deployment factories for deploying and managing airdrops. 
+
+## Staking Contracts
+
+We have forged partnerships with several major staking providers and can help you quickly launch staking for your project. This includes both token staking and LP staking. We'll soon deploy our own staking solutions.
+
+## Liquidity Pools
+
+The BBC Launchpad can advise you on how to launch and lock your liquidity pool and how to incentivize your community to add additional liquidity. We can also help you understand the difference between v2 and v3 liquidity.
